@@ -1,14 +1,13 @@
 {
   "hosting": {
-    "public": "./dist/SEWebsite",
+    "public": "./dist/SE",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
     "appAssociation": "AUTO",
-    "rewrites": [
-      {
+    "rewrites": [{
         "source": "/i/**",
         "dynamicLinks": true
       },
