@@ -63,39 +63,39 @@ export class JhComponent implements OnInit {
     }
     if (this.chapterNo == 2) {
       this.subTitle = 'Search for Mr Hyde';
-      this.title = 'The Sinister Door';
+      this.title = 'Hyde & Seek';
     }
     if (this.chapterNo == 3) {
       this.subTitle = 'Dr Jekyll was quite at ease';
-      this.title = 'The Sinister Door';
+      this.title = "Utterson's Worries";
     }
     if (this.chapterNo == 4) {
       this.subTitle = 'The Carew murder case';
-      this.title = 'The Sinister Door';
+      this.title = 'Carew Murder';
     }
     if (this.chapterNo == 5) {
       this.subTitle = 'Incident of the letter';
-      this.title = 'The Sinister Door';
+      this.title = 'Jekyll is "deadly sick"';
     }
     if (this.chapterNo == 6) {
       this.subTitle = 'Remarkable incident of Dr Lanyon';
-      this.title = 'The Sinister Door';
+      this.title = "Lanyon's Last";
     }
     if (this.chapterNo == 7) {
       this.subTitle = 'Incident at the window';
-      this.title = 'The Sinister Door';
+      this.title = 'Illness & Handwriting';
     }
     if (this.chapterNo == 8) {
       this.subTitle = 'The last night';
-      this.title = 'The Sinister Door';
+      this.title = 'The end of Dr. Jekyll';
     }
     if (this.chapterNo == 9) {
       this.subTitle = "Dr Lanyon's Narrative";
-      this.title = 'The Sinister Door';
+      this.title = "Lanyon's story";
     }
     if (this.chapterNo == 10) {
       this.subTitle = "Henry Jekyll's Full Statement of the case";
-      this.title = 'The Sinister Door';
+      this.title = 'The story of Mr Hyde';
     }
   }
 
