@@ -126,8 +126,6 @@ export class JhComponent implements OnInit {
     }
   }
 
-  dt = new Date();
-
   closeModal() {
     this.modalOpen = false;
   }
