@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>SE</title>
@@ -7,8 +8,23 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://shard.sam-easton.me/pull/animate.css">
 </head>
+
 <body>
   <app-root></app-root>
+
+  <!--Skrollr-->
+  <script src="https://shard.sam-easton.me/pull/skrollr.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      var s = skrollr.init({
+        forceHeight: false
+      });
+    });
+
+  </script>
 </body>
+
 </html>
