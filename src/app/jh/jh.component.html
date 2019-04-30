@@ -1,37 +1,44 @@
 <div class="holder">
-  <section
-    class="hero is-fullheight is-primary bg-moonstone"
-    id="start"
-    (click)="changeChapter()"
-  >
+  <section class="hero is-fullheight is-primary bg-moonstone" id="start" (click)="changeChapter()">
     <div class=" hero-body">
       <div class="container has-text-centered">
         <p class="is-family-code chapterName" *ngIf="chapterNo">
           CHAPTER {{ chapterNo }}
         </p>
-        <p
-          class="is-family-code chapterName is-hidden-to+-uch"
-          *ngIf="!chapterNo"
-        >
+        <p class="is-family-code chapterName is-hidden-touch" *ngIf="!chapterNo">
           CLICK TO START
         </p>
-        <p
-          class="is-family-code chapterName is-hidden-desktop"
-          *ngIf="!chapterNo"
-        >
+        <p class="is-family-code chapterName is-hidden-desktop" *ngIf="!chapterNo">
           TAP TO START
         </p>
-        <h1 class="se-large-strap">Jekyll & Hyde</h1>
-        <h1 class="se-large-strap-con">Chapters</h1>
+        <h1 class="se-large-strap">{{ title }}</h1>
+        <p class="se-large-strap-con">{{ subTitle }}</p>
       </div>
     </div>
   </section>
 
-  <div id="cover-cloud">
-    <img
-      src="https://sam-easton.sirv.com/assets/jh/brushover.svg"
-      class="cover"
-    />
-    <div class="cover-below"></div>
+  <div id="cover-cloud-red">
+    <img src="https://sam-easton.sirv.com/assets/jh/brushover.svg" class="cover-red" />
+    <div class="cover-below-red"></div>
   </div>
+
+  <div id="cover-cloud-blue">
+    <img src="https://sam-easton.sirv.com/assets/jh/brushover_moonstone.svg" class="cover-blue" />
+    <div class="cover-below-blue"></div>
+  </div>
+</div>
+
+<div class="modal" [class.is-active]="modalOpen">
+  <div class="modal-background" (click)="closeModal()"></div>
+  <div class="modal-content">
+    <div class="box">
+      <h1 class="title is-size-1">Welcome!</h1>
+      <p>Welcome to my revision of the Strange Case of Dr. Jekyll and Mr. Hyde chapters with my names.</p><br>
+      <p>My Chapter name will show up in bold above the original chapter name.</p>
+      <hr>
+      <p>Enjoy!</p>
+      <small class="has-text-grey">Sam Easton - {{ dt.getYear() + 1900 }}</small>
+    </div>
+  </div>
+  <button class="modal-close is-large" aria-label="close" (click)="closeModal()"></button>
 </div>
