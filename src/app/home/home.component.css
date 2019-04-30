@@ -1,0 +1,85 @@
+.bridge {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 3.25rem);
+  background: url("https://sam-easton.sirv.com/assets/tynebridge.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.se-large-strap {
+  font-size: 7rem;
+  margin-bottom: 0px;
+}
+
+.se-large-strap-con {
+  font-size: 2rem;
+  margin-top: -17px;
+}
+
+.se-powder-blue {
+  color: #afdddc;
+}
+
+.se-middle-blue {
+  color: #91cece;
+}
+
+.se-moonstone {
+  color: #78bebf;
+}
+
+.bg-powder-blue {
+  background: #afdddc;
+}
+
+.bg-middle-blue {
+  background: #91cece;
+}
+
+.bg-moonstone {
+  background: #78bebf;
+}
+
+.spacer {
+  width: 100%;
+  height: 80px;
+}
+
+.scroll-text-con {
+  font-size: 4rem;
+  color: transparent;
+  -webkit-text-stroke: white 2px;
+  display: inline;
+  margin: 0px 10px;
+}
+
+.scroll-text-con:hover {
+  color: white;
+  -webkit-text-stroke: 0px white;
+}
+
+.scroll-row {
+  animation: scroller 10s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes scroller {
+  0% {
+    transform: translate(0%)
+  }
+
+  100% {
+    transform: translate(-90%)
+  }
+}
+
+.scroll-row-rev {
+  animation: scroller 10s linear infinite;
+  animation-direction: alternate-reverse;
+}
+
+.se-sage {
+  background: url(https://sam-easton.sirv.com/assets/Sage.svg);
+  background-size: cover;
+}

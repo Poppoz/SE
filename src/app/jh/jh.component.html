@@ -1,3 +1,37 @@
-<p>
-  jh works!
-</p>
+<div class="holder">
+  <section
+    class="hero is-fullheight is-primary bg-moonstone"
+    id="start"
+    (click)="changeChapter()"
+  >
+    <div class=" hero-body">
+      <div class="container has-text-centered">
+        <p class="is-family-code chapterName" *ngIf="chapterNo">
+          CHAPTER {{ chapterNo }}
+        </p>
+        <p
+          class="is-family-code chapterName is-hidden-to+-uch"
+          *ngIf="!chapterNo"
+        >
+          CLICK TO START
+        </p>
+        <p
+          class="is-family-code chapterName is-hidden-desktop"
+          *ngIf="!chapterNo"
+        >
+          TAP TO START
+        </p>
+        <h1 class="se-large-strap">Jekyll & Hyde</h1>
+        <h1 class="se-large-strap-con">Chapters</h1>
+      </div>
+    </div>
+  </section>
+
+  <div id="cover-cloud">
+    <img
+      src="https://sam-easton.sirv.com/assets/jh/brushover.svg"
+      class="cover"
+    />
+    <div class="cover-below"></div>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+.se-powder-blue {
+  color: #afdddc;
+}
+
+.se-middle-blue {
+  color: #91cece;
+}
+
+.se-moonstone {
+  color: #78bebf;
+}
+
+.bg-powder-blue {
+  background: #afdddc;
+}
+
+.bg-middle-blue {
+  background: #91cece;
+}
+
+.bg-moonstone {
+  background: #78bebf;
+}
+
+.se-large-strap {
+  font-size: 7rem;
+  margin-bottom: 0px;
+  line-height: 0.9em;
+}
+
+.se-large-strap-con {
+  font-size: 4rem;
+  margin-top: -20px;
+}
+
+.chapterName {
+  letter-spacing: 10px;
+  scroll-snap-type: y mandatory;
+}
+
+.holder {
+  max-height: 100vh;
+  overflow: hidden !important;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+#cover-cloud {
+  width: 100%;
+  position: absolute;
+}
+
+#cover-cloud.triggered {
+  animation: coverup 1s forwards;
+}
+
+#cover-cloud.triggered-back {
+  animation: coverdown 1s forwards;
+}
+
+.cover {
+  display: block;
+}
+
+.cover-below {
+  background: #fa7268;
+  height: 200vh;
+  width: 100%;
+}
+
+@keyframes coverup {
+  0% {
+    top: 110vh;
+  }
+
+  100% {
+    top: -120px;
+  }
+}
+
+@keyframes coverdown {
+  0% {
+    top: -120px;
+  }
+
+  100% {
+    top: 110vh;
+  }
+}
